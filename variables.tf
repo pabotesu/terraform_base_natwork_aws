@@ -16,7 +16,7 @@ variable "vpc-cidr" {
 }
 
 variable "az" {
-  default     = ["ap-northeast-1a", "ap-northeast-1c", "ap-northeast-1b"]
+  default     = ["ap-northeast-1a", "ap-northeast-1c", "ap-northeast-1d"]
 }
 
 
