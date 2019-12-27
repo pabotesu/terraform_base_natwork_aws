@@ -51,7 +51,7 @@ resource "aws_route_table_association" "for-business-public-c" {
 
 /*-----------------------------private subnet settings--------------------------------*/
 resource "aws_subnet" "private-subnet" {
-    count             = "${length(var.public-subnets)}"
+    count             = "${length(var.private-subnets)}"
     vpc_id            = "${aws_vpc.vpc.id}" 
     cidr_block        = "${var.private-subnets[count.index]}"
     availability_zone = "${element(var.az, count.index)}"
